@@ -8,6 +8,9 @@ class Program
         Book book = new Book("C# for beginners", "Bill Gates", "1234567");
 
         book.DisplayInfo();
+
+        Book book2 = new Book("Ultimate C#", "Microsoft", "2233445");
+        book2.DisplayInfo();
     }
 }
 
