@@ -6,11 +6,20 @@ namespace Library
 {
     public class Book
     {
-        public string Title;
-        public string Author;
-        public string ISBN;
+        string Title;
+        string Author;
+        string ISBN;
 
-        public void DisplayInfo()
+        // Example of a constructor that allows us to 'construct' a new
+        // Book object
+        public Book(string bookTitle, string BookAuthor, string bookISBN)
+        {
+            this.Title = bookTitle;
+            this.Author = BookAuthor;
+            this.ISBN = bookISBN;
+        }
+
+        void DisplayInfo()
         {
             Console.WriteLine($"Book title: {Title}");
             Console.WriteLine($"Book Author: {Author}");
